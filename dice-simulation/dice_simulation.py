@@ -7,12 +7,12 @@ def roll_one_die():
 
 def simulate_one_die_rolls(number_of_rolls):
     proportions = {
-        "proportions_one": [],
-        "proportions_two": [],
-        "proportions_three": [],
-        "proportions_four": [],
-        "proportions_five": [],
-        "proportions_six": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
     }
 
     counts = {
@@ -40,12 +40,12 @@ def simulate_one_die_rolls(number_of_rolls):
         if roll == 6:
             counts["side_six"] += 1
 
-    proportions["proportions_one"].append(counts["side_one"] / number_of_rolls)
-    proportions["proportions_two"].append(counts["side_two"] / number_of_rolls)
-    proportions["proportions_three"].append(counts["side_three"] / number_of_rolls)
-    proportions["proportions_four"].append(counts["side_four"] / number_of_rolls)
-    proportions["proportions_five"].append(counts["side_five"] / number_of_rolls)
-    proportions["proportions_six"].append(counts["side_six"] / number_of_rolls)
+    proportions["1"].append(counts["side_one"] / number_of_rolls)
+    proportions["2"].append(counts["side_two"] / number_of_rolls)
+    proportions["3"].append(counts["side_three"] / number_of_rolls)
+    proportions["4"].append(counts["side_four"] / number_of_rolls)
+    proportions["5"].append(counts["side_five"] / number_of_rolls)
+    proportions["6"].append(counts["side_six"] / number_of_rolls)
     
     return counts, proportions
 
@@ -94,8 +94,11 @@ for number in sample_sizes:
     one_die_proportions.append(proportions)
 
 # Print results
-print(one_die_counts)
-print(one_die_proportions)
+print("---Sample Size Comparison: One Die---")
+for number in sample_sizes: 
+    print(f"Rolls: {number}")
+    for roll, proportion in proportions.items():
+        print(f"{roll}: {proportion:.3f}")
 
 # Plot graphs
 ...
