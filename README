@@ -1,0 +1,13 @@
+# Coin Flip Simulation
+
+## Question
+How does the proportion of heads change as the number of coin flips increases?
+
+## Method
+I simulated fair coin flips using Python. I compared different sample sizes, tracked the running proportion of heads over time, and measured the longest streaks of heads and tails.
+
+## Result
+Small samples varied widely from 50% heads. Larger samples became more stable and moved closer to 0.5.
+
+## What I Learned
+This simulation demonstrates the law of large numbers. Random outcomes can look uneven in the short run, but long-run proportions tend to approach the expected probability.
