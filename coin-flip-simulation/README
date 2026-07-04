@@ -1,0 +1,59 @@
+# Coin Flip Simulation
+
+## Question
+
+How does the proportion of heads change as the number of coin flips increases?
+
+## Concepts Practiced
+
+This simulation demonstrates:
+
+* Random simulation
+* Experimental probability
+* Theoretical probability
+* Sample size effects
+* Running proportions
+* Law of large numbers
+* Streak analysis
+* Data visualization with line graphs
+
+## Method
+
+I simulated fair coin flips using Python.
+
+The program compares different sample sizes:
+
+* 10 flips
+* 100 flips
+* 1,000 flips
+* 10,000 flips
+
+For each sample size, the program counts the number of heads and tails, then calculates the proportion of heads.
+
+The program also tracks the running proportion of heads during one long simulation. This shows how the proportion changes after each flip.
+
+Finally, the program measures the longest streaks of heads and tails to show that long streaks can occur naturally even when a coin is fair.
+
+## Visualizations
+
+The full running-proportion graph shows how the proportion of heads changes over 10,000 flips.
+
+![Running Proportion of Heads](coin-flip-simulation/figures/coin_flip_running_proportion_full.png)
+
+The zoomed-in graph shows why early results can fluctuate dramatically when the sample size is small.
+
+![Running Proportion of Heads: First 100 Flips](coin-flip-simulation/figures/coin_flip_running_proportion_first_100.png)
+
+## Results
+
+Small samples varied widely from 50% heads. Larger samples became more stable and moved closer to the theoretical probability of 0.5.
+
+The running-proportion graph showed large early fluctuations, but those fluctuations became smaller as the number of flips increased.
+
+The streak analysis showed that long streaks of heads or tails can happen naturally, even when the coin is fair.
+
+## What I Learned
+
+This simulation demonstrates the law of large numbers. Random outcomes can look uneven in the short run, but long-run proportions tend to approach the expected probability.
+
+A fair random process does not always look balanced in small samples. Short-term randomness can produce surprising results, but long-term patterns become more stable.
