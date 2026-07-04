@@ -1,0 +1,61 @@
+# Sampling Distribution Simulation
+
+## Question
+
+How does the distribution of sample means change as the sample size increases?
+
+This simulation explores what happens when we repeatedly take samples from the same random process. In this case, each sample is made by rolling a fair six-sided die multiple times and calculating the sample mean.
+
+## Method
+
+I simulated repeated samples of die rolls using Python.
+
+For each sample size, the program:
+
+1. Rolls a fair six-sided die multiple times.
+2. Calculates the mean of that sample.
+3. Repeats the process 1,000 times.
+4. Summarizes the sample means.
+5. Creates a histogram showing the distribution of sample means.
+
+The sample sizes tested were: 2, 5, 10, 30, 100
+
+The theoretical mean of one fair six-sided die is:
+
+(1 + 2 + 3 + 4 + 5 + 6) / 6 = 3.5
+
+## Results
+
+As the sample size increased, the sample means became more concentrated around 3.5.
+
+Small sample sizes produced sample means with a wider range. Larger sample sizes produced sample means that varied less from sample to sample.
+
+The histograms show this visually. Each histogram uses the same x-axis from 1 to 6, so the spread of the sample means can be compared directly.
+
+Each histogram uses proportion on the y-axis, meaning each bar shows the proportion of simulated sample means that fell within that interval.
+
+## What I Learned
+
+This simulation demonstrates the idea of a sampling distribution.
+
+A sampling distribution is the distribution of a statistic, such as a sample mean, created by repeatedly taking samples.
+
+The simulation showed that larger samples tend to produce more stable sample means. Even though individual die rolls are random, the average of many rolls tends to stay close to the theoretical mean.
+
+This connects to the law of large numbers and the central limit theorem. As sample size increases, sample means become more predictable and cluster more tightly around the true population mean.
+
+## Files
+sampling_distribution.py
+figures/
+
+## Figures
+
+The program saves histograms for each sample size in the figures folder.
+
+Generated figure files:
+
+sample_means_n_2.png
+sample_means_n_5.png
+sample_means_n_10.png
+sample_means_n_30.png
+sample_means_n_100.png
